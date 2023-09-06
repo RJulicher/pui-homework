@@ -1,15 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <link rel="stylesheet" href="css/theme.css">
+  <title>Bun Bun Bake Shop</title>
   
   <body>
-
-    <h1>I am the solution to HW1!</h1>
-
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+	<section class="header">
+		<img src="logo-01.svg" alt="Bun Bun cinnamon roll logo" id="logo">
+		<div class="headerText">
+			<section id="nav">
+				<h2 class="navText">PRODUCTS</h2>
+				<h2 class="navText">CART</h2>
+			</section>
+			<hr>
+			<h1 id="motto">Our hand-made cinnamon rolls</h1>
+		</div>
+	</section>
+    
+	<div class="catalog">
+	
+		<section class="product">
+			<img src="products/original-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and cinnamon stick" class="productPic">
+			<h3 class="productName">Original cinnamon roll</h3>
+			
+			<label for="originalDropDown" class="option">Glazing:</label>
+			<select name="glazing" id="originalDropDown" class="glazeDropdown">
+				<option value="original">Keep original</option>
+				<option value="sugar">Sugar milk</option>
+				<option value="vanilla">Vanilla milk</option>
+				<option value="chocolate">Double chocolate</option>
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<input type="radio" value="1" name="original" id="original1" class="packSizeRadio">
+				<label for="original1" class="packSizeButton">1</label>
+				
+				<input type="radio" value="3" name="original" id="original3" class="packSizeRadio">
+				<label for="original3" class="packSizeButton">3</label>
+				
+				<input type="radio" value="6" name="original" id="original6" class="packSizeRadio">
+				<label for="original6" class="packSizeButton">6</label>
+				
+				<input type="radio" value="12" name="original" id="original12" class="packSizeRadio">
+				<label for="original12" class="packSizeButton">12</label>
+			</div>
+			
+			<h4 class="price">$ 2.49</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<section class="product">
+			<img src="products/apple-cinnamon-roll.jpg" alt="Cinnamon roll with apples and glaze" class="productPic">
+			<h3 class="productName">Apple cinnamon roll</h3>
+			
+			<label for="appleDropDown" class="option">Glazing:</label>
+			<select name="glazing" id="appleDropDown" class="glazeDropdown">
+				<option value="original">Keep original</option>
+				<option value="sugar">Sugar milk</option>
+				<option value="vanilla">Vanilla milk</option>
+				<option value="chocolate">Double chocolate</option>
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<input type="radio" value="1" name="apple" id="apple1" class="packSizeRadio">
+				<label for="apple1" class="packSizeButton">1</label>
+				
+				<input type="radio" value="3" name="apple" id="apple3" class="packSizeRadio">
+				<label for="apple3" class="packSizeButton">3</label>
+				
+				<input type="radio" value="6" name="apple" id="apple6" class="packSizeRadio">
+				<label for="apple6" class="packSizeButton">6</label>
+				
+				<input type="radio" value="12" name="apple" id="apple12" class="packSizeRadio">
+				<label for="apple12" class="packSizeButton">12</label>
+			</div>
+			
+			<h4 class="price">$ 2.49</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<section class="product">
+			<img src="products/raisin-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and raisins" class="productPic">
+			<h3 class="productName">Raisin cinnamon roll</h3>
+			
+			<label for="raisinDropDown" class="option">Glazing:</label>
+			<select name="glazing" id="raisinDropDown" class="glazeDropdown">
+				<option value="original">Keep original</option>
+				<option value="sugar">Sugar milk</option>
+				<option value="vanilla">Vanilla milk</option>
+				<option value="chocolate">Double chocolate</option>
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<input type="radio" value="1" name="raisin" id="raisin1" class="packSizeRadio">
+				<label for="raisin1" class="packSizeButton">1</label>
+				
+				<input type="radio" value="3" name="raisin" id="raisin3" class="packSizeRadio">
+				<label for="raisin3" class="packSizeButton">3</label>
+				
+				<input type="radio" value="6" name="raisin" id="raisin6" class="packSizeRadio">
+				<label for="raisin6" class="packSizeButton">6</label>
+				
+				<input type="radio" value="12" name="raisin" id="raisin12" class="packSizeRadio">
+				<label for="raisin12" class="packSizeButton">12</label>
+			</div>
+			
+			<h4 class="price">$ 2.49</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<section class="product">
+			<img src="products/walnut-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and cinnamon stick" class="productPic">
+			<h3 class="productName">Walnut cinnamon roll</h3>
+			
+			<label for="walnutDropDown" class="option">Glazing:</label>
+			<select name="glazing" id="walnutDropDown" class="glazeDropdown">
+				<option value="original">Keep original</option>
+				<option value="sugar">Sugar milk</option>
+				<option value="vanilla">Vanilla milk</option>
+				<option value="chocolate">Double chocolate</option>
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<input type="radio" value="1" name="walnut" id="walnut1" class="packSizeRadio">
+				<label for="walnut1" class="packSizeButton">1</label>
+				
+				<input type="radio" value="3" name="walnut" id="walnut3" class="packSizeRadio">
+				<label for="walnut3" class="packSizeButton">3</label>
+				
+				<input type="radio" value="6" name="walnut" id="walnut6" class="packSizeRadio">
+				<label for="walnut6" class="packSizeButton">6</label>
+				
+				<input type="radio" value="12" name="walnut" id="walnut12" class="packSizeRadio">
+				<label for="walnut12" class="packSizeButton">12</label>
+			</div>
+			
+			<h4 class="price">$ 2.49</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<section class="product">
+			<img src="products/double-chocolate-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and cinnamon stick" class="productPic">
+			<h3 class="productName">Double-chocolate cinnamon roll</h3>
+			
+			<label for="double-chocolateDropDown" class="option">Glazing:</label>
+			<select name="glazing" id="double-chocolateDropDown" class="glazeDropdown">
+				<option value="original">Keep original</option>
+				<option value="sugar">Sugar milk</option>
+				<option value="vanilla">Vanilla milk</option>
+				<option value="chocolate">Double chocolate</option>
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<input type="radio" value="1" name="double-chocolate" id="double-chocolate1" class="packSizeRadio">
+				<label for="double-chocolate1" class="packSizeButton">1</label>
+				
+				<input type="radio" value="3" name="double-chocolate" id="double-chocolate3" class="packSizeRadio">
+				<label for="double-chocolate3" class="packSizeButton">3</label>
+				
+				<input type="radio" value="6" name="double-chocolate" id="double-chocolate6" class="packSizeRadio">
+				<label for="double-chocolate6" class="packSizeButton">6</label>
+				
+				<input type="radio" value="12" name="double-chocolate" id="double-chocolate12" class="packSizeRadio">
+				<label for="double-chocolate12" class="packSizeButton">12</label>
+			</div>
+			
+			<h4 class="price">$ 2.49</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<section class="product">
+			<img src="products/strawberry-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and cinnamon stick" class="productPic">
+			<h3 class="productName">Strawberry cinnamon roll</h3>
+			
+			<label for="strawberry-cinnamonDropDown" class="option">Glazing:</label>
+			<select name="glazing" id="strawberry-cinnamonDropDown" class="glazeDropdown">
+				<option value="original">Keep original</option>
+				<option value="sugar">Sugar milk</option>
+				<option value="vanilla">Vanilla milk</option>
+				<option value="chocolate">Double chocolate</option>
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<input type="radio" value="1" name="strawberry-cinnamon" id="strawberry-cinnamon1" class="packSizeRadio">
+				<label for="strawberry-cinnamon1" class="packSizeButton">1</label>
+				
+				<input type="radio" value="3" name="strawberry-cinnamon" id="strawberry-cinnamon3" class="packSizeRadio">
+				<label for="strawberry-cinnamon3" class="packSizeButton">3</label>
+				
+				<input type="radio" value="6" name="strawberry-cinnamon" id="strawberry-cinnamon6" class="packSizeRadio">
+				<label for="strawberry-cinnamon6" class="packSizeButton">6</label>
+				
+				<input type="radio" value="12" name="strawberry-cinnamon" id="strawberry-cinnamon12" class="packSizeRadio">
+				<label for="strawberry-cinnamon12" class="packSizeButton">12</label>
+			</div>
+			
+			<h4 class="price">$ 2.49</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+	
+	</div>
 
   </body>
 </html>
