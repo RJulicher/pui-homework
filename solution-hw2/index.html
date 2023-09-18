@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+	<head>
+		<link rel="stylesheet" href="css/theme.css">
+		<script src="./js/price.js"></script>
+  	<title>Bun Bun Bake Shop</title>
+	</head>
+  
+  
+  <body onload="loadContent()">
+	
+	<!--Main header area with nav bar-->
+	<header class="header">
+		<img src="logo-01.svg" alt="Bun Bun cinnamon roll logo" id="logo">
+		<div class="headerText">
+			<nav id="nav">
+				<a class="navText">PRODUCTS</a>
+
+				<div id="cart">
+					<a class="navText" id="cartLink">CART</a>
+
+					<div id="cartPopup">
+						<span class="addedSummaryText">Added to cart:</span><br><br>
+						<span class="addedSummaryText", id="addedProduct"></span><br>
+						<span class="addedSummaryText", id="addedGlazing"></span><br>
+						<span class="addedSummaryText", id="addedPackSize"></span><br>
+						<span class="addedSummaryText", id="addedPrice"></span>
+					</div>
+
+					<div id="cartSummaryBox">
+						<p class="cartSummary">0 item</p>
+						<p class="cartSummary">Total: $ 0.00</p>
+					</div>
+				</div>
+
+			</nav>
+			<hr>
+			<h1 id="motto">Our hand-made cinnamon rolls</h1>
+		</div>
+	</header>
+    
+	<!--Main catalog with all product sections-->
+	<main class="catalog">
+	
+		<!--Original-->
+		<section class="product", id="0">
+			<img src="products/original-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and cinnamon stick" class="productPic">
+			<h3 class="productName">Original cinnamon roll</h3>
+			
+			<label for="dropDown0" class="option">Glazing:</label>
+			<select name="glazing" id="dropDown0" class="glazeDropdown">
+				<!--Options dynamically added here-->
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<!--Buttons dynamically added here-->
+			</div>
+			
+			<h4 class="price", id="price0">$ 0.00</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<!--Apple-->
+		<section class="product", id="1">
+			<img src="products/apple-cinnamon-roll.jpg" alt="Cinnamon roll with apples and glaze" class="productPic">
+			<h3 class="productName">Apple cinnamon roll</h3>
+			
+			<label for="dropDown1" class="option">Glazing:</label>
+			<select name="glazing" id="dropDown1" class="glazeDropdown">
+				<!--Options dynamically added here-->
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<!--Buttons dynamically added here-->
+			</div>
+			
+			<h4 class="price", id="price1">$ 0.00</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<!--Raisin-->
+		<section class="product", id="2">
+			<img src="products/raisin-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and raisins" class="productPic">
+			<h3 class="productName">Raisin cinnamon roll</h3>
+			
+			<label for="dropDown2" class="option">Glazing:</label>
+			<select name="glazing" id="dropDown2" class="glazeDropdown">
+				<!--Options dynamically added here-->
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<!--Buttons dynamically added here-->
+			</div>
+			
+			<h4 class="price", id="price2">$ 0.00</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<!--Walnut-->
+		<section class="product", id="3">
+			<img src="products/walnut-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and cinnamon stick" class="productPic">
+			<h3 class="productName">Walnut cinnamon roll</h3>
+			
+			<label for="dropDown3" class="option">Glazing:</label>
+			<select name="glazing" id="dropDown3" class="glazeDropdown">
+				<!--Options dynamically added here-->
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<!--Buttons dynamically added here-->
+			</div>
+			
+			<h4 class="price", id="price3">$ 0.00</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<!--Double-chocolate-->
+		<section class="product", id="4">
+			<img src="products/double-chocolate-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and cinnamon stick" class="productPic">
+			<h3 class="productName">Double-chocolate cinnamon roll</h3>
+			
+			<label for="dropDown4" class="option">Glazing:</label>
+			<select name="glazing" id="dropDown4" class="glazeDropdown">
+				<!--Options dynamically added here-->
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<!--Buttons dynamically added here-->
+			</div>
+			
+			<h4 class="price", id="price4">$ 0.00</h4>
+			<button type="button" class="addToCart">Add to Cart</button>
+		</section>
+		
+		<!--Strawberry-->
+		<section class="product", id="5">
+			<img src="products/strawberry-cinnamon-roll.jpg" alt="Cinnamon roll with glaze and cinnamon stick" class="productPic">
+			<h3 class="productName">Strawberry cinnamon roll</h3>
+			
+			<label for="dropDown5" class="option">Glazing:</label>
+			<select name="glazing" id="dropDown5" class="glazeDropdown">
+				<!--Options dynamically added here-->
+			</select>
+			
+			<label class="option">Pack size:</label>
+			<div class="packSizeContainer">
+				<!--Buttons dynamically added here-->
+			</div>
+			
+			<h4 class="price", id="price5">$ 0.00</h4>
+			<button type="button", class="addToCart">Add to Cart</button>
+		</section>
+	
+	</main>
+
+  </body>
+</html>

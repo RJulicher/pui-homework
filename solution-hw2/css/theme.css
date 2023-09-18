@@ -1,0 +1,229 @@
+body
+{
+	font-family:			tahoma, sans-serif;
+}
+
+.header
+{
+	margin:						0% 0% 1% 1%;
+	height:						250px;
+	/*Citation: CSS display property. (n.d.). 
+	https://www.w3schools.com/cssref/pr_class_display.php*/
+	display:					flex;
+	width:						98%;
+}
+
+#logo
+{
+	flex:							0 0 auto;
+	width:						400px;
+}
+
+.headerText
+{
+	flex:							1 1 auto;
+	margin-top:				10px;
+	margin-left:			25px;
+	display:					inline-block;
+}
+
+#nav
+{
+	float:						right;
+	display:					flex;
+	margin-right:			2%;
+	flex-wrap:				wrap;
+	margin-top:				20px;
+	margin-bottom:		0px;
+	/*This all may seem a bit excessive, but it allows the nav bar to go right up to
+	the logo without anything overlapping*/
+	width:						100%;
+	max-width:				400px;
+	justify-content:	space-around;
+}
+
+#cart
+{
+	text-align: center;
+}
+
+.navText
+{
+	font-weight:		normal;
+	font-size:			25px;
+	width:					140px;
+	margin-bottom:	45px;
+	margin-top:			0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align:			center;
+}
+
+#cartPopup
+{
+	display:	none;
+	background-color: white;
+	width: 190px;
+	padding: 5px;
+	margin-left: -65px;
+	position:	absolute;
+	border-style: inset;
+	text-align: left;
+}
+
+#addedProduct
+{
+	font-weight: bold;
+}
+
+#cartSummaryBox
+{
+	margin-top:			10px;
+	margin-bottom:	0px;
+}
+
+.cartSummary
+{
+	margin-bottom: 	0px;
+	margin-top: 		0px;
+	margin-left:		-40px;
+	text-align: 		right;
+	font-size:			15px;
+}
+
+hr
+{
+	border-top:			4px solid black;
+	width:					102%;
+}
+
+#motto
+{
+	display:				block;
+	font-weight:		normal;
+	font-size:			2.5vw;
+	margin-top:			70px;
+}
+
+/*----------Product Segment CSS----------*/
+.catalog
+{
+	display:				flex;
+	flex-wrap:			wrap;
+	margin-top:			80px;
+	padding-left:		5%;
+	padding-right:		5%;
+	justify-content:	space-around;
+}
+
+.product
+{
+	display: inline-block;
+	width:				280px;
+	margin:				0px 20px 80px 20px;
+	font-size:			18px;
+}
+
+.productPic
+{
+	border-color:		black;
+	border-width:		3px;
+	border-style:		solid;
+	width:				274px;
+}
+
+.productName
+{
+	margin:				15px 2px 20px 2px;
+	font-size:			21px;
+}
+
+.option
+{
+	display:			inline-block;
+	width:				35%;
+	margin-top:			5px;
+}
+
+.glazeDropdown
+{
+	display:			inline-block;
+	width:				62%;
+	height:				35px;
+	border-color:		black;
+	border-width:		2px;
+	border-style:		solid;
+	margin-top:			5px;
+	font-size:			18px;
+	padding:			0px;
+}
+
+.packSizeContainer
+{
+	display:			inline-flex;
+	justify-content:	space-between;
+	width:				62%;
+	margin-top:			10px;
+}
+
+.packSizeRadio
+{
+	position:			absolute;
+	height:				0px;
+	width:				0px;
+}
+
+.packSizeButton
+{
+	display:			inline-block;
+	height:				35px;
+	width:				35px;
+	border-color:		black;
+	border-width:		2px;
+	border-style:		solid;
+	text-align:			center;
+	line-height:		30px;
+}
+
+.price
+{
+	display:			inline-block;
+	width:				35%;
+	margin-top:			15px;
+	font-family:		sans-serif;
+	font-size:			25px;
+}
+
+.addToCart
+{
+	display:			inline-block;
+	width:				62%;
+	height:				50px;
+	border-color:		black;
+	border-width:		2px;
+	border-style:		solid;
+	margin-top:			25px;
+	font-size:			23px;
+	font-weight:		bold;
+	background-color:	white;
+}
+
+/*----------Button/Link Color CSS----------*/
+
+.navText:hover
+{
+	background-color:	yellow;
+	font-weight:		bold;
+}
+
+/*Citation: How To Create a Custom Checkbox and Radio Buttons. (n.d.). https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
+/*Note: They don't do the same thing in this link, but they use one technique that I got a refresher on via this source*/
+.packSizeRadio:checked + .packSizeButton
+{
+	background-color:	lightgrey;
+}
+
+.addToCart:hover
+{
+	background-color:	yellow;
+}
