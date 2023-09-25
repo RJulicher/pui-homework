@@ -2,6 +2,8 @@ import logo from './logo-01.svg';
 import './css/theme.css';
 import React, { Component } from 'react';
 
+
+// Navbar class to handle nav and future cart functionality
 class Navbar extends Component {
   render() {
     return(
@@ -23,6 +25,7 @@ class Navbar extends Component {
   }
 }
 
+// Product class using state so that products can be updated as state changes happen
 class Product extends Component {
   constructor(props) {
     super(props);
@@ -34,6 +37,7 @@ class Product extends Component {
                   price: props.price};
   }
 
+  // Render is long, but it's long purely because of two option/input fields.
   render() {
     return (
       <section className="product" id={ this.state.id }>
@@ -70,6 +74,7 @@ class Product extends Component {
   }
 }
 
+// Main App function
 function App() {
   return (
     <div className="App">
