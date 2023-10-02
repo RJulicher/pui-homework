@@ -1,5 +1,5 @@
 import '../css/theme.css';
-import Page from './Page.js';
+import Page from '../js/Page.js';
 
 // Main App function
 function App() {

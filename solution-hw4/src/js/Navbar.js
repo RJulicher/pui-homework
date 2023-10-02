@@ -1,33 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../logo-01.svg';
-import {Glaze, Pack, glazingOptions, packSizeOptions, Product} from './Product.js';
-
-/*
-* -------------------------------------------------
-* Helper Classes + Data Structures
-* -------------------------------------------------
-*/
-
-class Roll {
-  type;
-  price;
-  glazing;
-  packSize;
-
-  constructor(newType, newPrice, newGlazing, newPackSize){
-    this.type     = newType;
-    this.price    = newPrice;
-    this.glazing  = newGlazing;
-    this.packSize = newPackSize;
-  }
-
-  // Basic stringify function for debugging
-  toString(){
-    return "type: " + this.type + ", price: " + this.price + ", glazing: " 
-            + this.glazing + ", packSize: " + this.packSize + "\n";
-  }
-}
-
+import {glazingOptions, packSizeOptions, typeOptions} from './HelperStructs.js';
 
 /*
 * -------------------------------------------------
@@ -37,10 +10,9 @@ class Roll {
 
 // Navbar class to handle nav and future cart functionality
 class Navbar extends Component {
-
   // If there was an update and it was to the cart, show the popup
   componentDidUpdate(prevProps){
-    if (prevProps.content.length != this.props.content.length){
+    if (prevProps.content.length !== this.props.content.length){
       let popup           = document.querySelector("#cartPopup");
       popup.style.display = "block";
       setTimeout(function() { popup.style.display = "none";}, 3000);
@@ -66,7 +38,7 @@ class Navbar extends Component {
                 <span className="addedSummaryText">Added to cart:</span><br/><br/>
 						    <span className="addedSummaryText" id="addedProduct">
                   {this.props.content.length > 0 ?
-                    this.props.content[this.props.content.length-1].type
+                    typeOptions[this.props.content[this.props.content.length-1].type].typeName
                     : ""}
                 </span><br/>
 						    <span className="addedSummaryText" id="addedGlazing">
@@ -88,7 +60,7 @@ class Navbar extends Component {
 
               <div id="cartSummaryBox">
                 <p className="cartSummary">
-                  {this.props.content.length + " item" + (this.props.content.length == 1 ? "" : "s")}
+                  {this.props.content.length + " item" + (this.props.content.length === 1 ? "" : "s")}
                 </p>
                 <p className="cartSummary">
                   {"Total: $ " + parseFloat(this.props.priceTotal).toFixed(2)}
@@ -111,4 +83,4 @@ class Navbar extends Component {
 * -------------------------------------------------
 */
 
-export {Navbar, Roll};
+export default Navbar;
