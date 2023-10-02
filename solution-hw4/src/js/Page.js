@@ -10,6 +10,7 @@ class Page extends Component{
                   totalCost: 0.00};
   }
 
+  // Method passed between components to update cart contents
   updateCart = (type, glazing, packSize, price) => {
     this.setState(prevState => ({
       cartContent: [...prevState.cartContent, new Product(type, glazing, packSize, price)],

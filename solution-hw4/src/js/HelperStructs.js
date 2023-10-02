@@ -1,5 +1,3 @@
-
-
 class Product {
   type;
   glazing;
