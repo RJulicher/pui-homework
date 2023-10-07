@@ -1,0 +1,99 @@
+.cartSection
+{
+	border-color:		grey;
+	border-top-width:		10px;
+	border-bottom-width: 10px;
+	border-style:		solid;
+	padding-left:		4.5%;
+	padding-right:	4.5%;
+}
+
+.cartProduct
+{
+	display:			inline-block;
+	width:				180px;
+	margin:				0px 50px 10px 50px;
+	font-size:		15px;
+	text-align: center;
+}
+
+.cartProductPic
+{
+  border-color:		black;
+	border-width:		3px;
+	border-style:		solid;
+	width:					180px;
+}
+
+.cartText
+{
+	margin-bottom:	20px;
+	margin-top:			20px;
+	width:					100%;
+	font-size:			25px;
+}
+
+#cartHeader
+{
+	display: inline-block;
+	margin: 		1%;
+	text-align:	left;
+	width:			48%;
+}
+
+#cartTotal
+{
+	display: inline-block;
+	margin:			1%;
+	text-align:	right;
+	width:			48%;
+}
+
+.cartOption
+{
+	display:		block;
+	width:			100%;
+	margin-top:	5px;
+}
+
+.cartProductPrice
+{
+	display:		block;
+	width:			100%;
+	margin-top:	5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.removeCartItemButton
+{
+	margin:						15px;
+	border:						none;
+	background-color: white;
+	text-decoration: underline;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.removeCartItemButton:hover
+{
+	font-weight: bold;
+}
+
+.searchSection
+{
+	width: 100%;
+	margin-top:			5px;
+	padding-left:		5%;
+	padding-right:	5%;
+}
+
+#searchInput
+{
+	width:					300px;
+}
+
+.searchSegment
+{
+	margin-left:		40px;
+}
