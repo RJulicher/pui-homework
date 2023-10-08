@@ -143,7 +143,8 @@ hr
 .productName
 {
 	margin:					15px 2px 20px 2px;
-	font-size:			21px;
+	font-weight:		200;
+	font-size:			24px;
 }
 
 .option
