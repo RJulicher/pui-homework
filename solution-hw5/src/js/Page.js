@@ -17,6 +17,7 @@ class Page extends Component{
                   searchIsEmpty: false};
   }
 
+  // Sort listing content by name
   sortByName = () => {
     let sortedContent = [...this.state.listingContent];
     sortedContent.sort((a,b) =>   {
@@ -29,6 +30,7 @@ class Page extends Component{
     this.setState({listingContent: sortedContent});
   }
 
+  // Sort listing content by price
   sortByPrice = () => {
     let sortedContent = [...this.state.listingContent];
     sortedContent.sort((a,b) =>   {
@@ -41,14 +43,17 @@ class Page extends Component{
     this.setState({listingContent: sortedContent});
   }
 
+  // Decides which sorting method to use, method gets passed to component
   sort = (e) => {
     e.target.value == "name" ? this.sortByName() : this.sortByPrice();
   }
 
+  // Toggles cart expansion
   toggleCart = () => {
     this.setState({cartActive: !this.state.cartActive});
   }
 
+  // Search function for listing filtration
   search = () => {
     let searchString = document.getElementById("searchInput").value;
     let emptySearch = true;
@@ -76,7 +81,6 @@ class Page extends Component{
 
   // Very short update functions, but having them keeps it clear where things are happening
   updatePack = (value, id) => {
-    //console.log("updating packSize of " + id + " to " + value);
     let updatedListing = [...this.state.listingContent];
     updatedListing[id].packSize = value;
     this.updatePrice(updatedListing, id);
@@ -84,13 +88,13 @@ class Page extends Component{
   }
   
   updateGlazing = (value, id) => {
-    //console.log("updating glazing of " + id + " to " + value);
     let updatedListing = [...this.state.listingContent];
     updatedListing[id].glazing = value;
     this.updatePrice(updatedListing, id);
     this.setState({listingContent: updatedListing});
   }
 
+  // Removes a given item from cart
   removeCartItem = (index) => {
     let updatedCart = [...this.state.cartContent];
     let cost = (parseFloat(this.state.totalCost) -
@@ -120,7 +124,6 @@ class Page extends Component{
 
         <main className="catalog">
           {this.state.listingContent.map((roll, idx) => {
-            //console.log(roll.type);
             let rollName = typeOptions[roll.type].typeName.toLowerCase();
             return (rollName.includes(this.state.searchQuery.toLowerCase()) && 
             <Product

@@ -25,7 +25,6 @@ class CartSection extends Component {
               </span>
             </div>
             {this.props.cartContent.map((product, idx) => {
-              //console.log(roll.type);
               return <CartProduct key={idx} roll={product} id={idx}
                                   removeCartItem={this.removeCartItem}/>
             })}
