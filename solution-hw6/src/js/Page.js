@@ -131,7 +131,7 @@ class Page extends Component{
   render(){
     return(
       <div className="Page">
-        <Navbar content={this.state.numItemsInCart} infoPopup="none" toggleCart={this.toggleCart}/>
+        <Navbar numItemsInCart={this.state.numItemsInCart} infoPopup="none" toggleCart={this.toggleCart}/>
 
         <CartSection totalCost={this.state.totalCost}
                       active={this.state.cartActive}
